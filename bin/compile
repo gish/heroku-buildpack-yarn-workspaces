@@ -22,6 +22,8 @@ fi
 
 cd $BUILD_DIR
 
+header "build @kvittoapp/api-types"
+yarn workspace @kvittoapp/api-types run build
 header "build @kvittoapp/api-client"
 yarn workspace @kvittoapp/api-client run build
 header "build @kvittoapp/ducks"
